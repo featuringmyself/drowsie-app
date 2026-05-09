@@ -22,7 +22,7 @@ export default function Alarm() {
     return (
         <ScrollView
             className="flex-1 bg-night"
-            contentContainerStyle={{ flexGrow: 1 }}
+            contentContainerStyle={{ flexGrow: 1, paddingBottom: 140 }}
             bounces
         >
             <View

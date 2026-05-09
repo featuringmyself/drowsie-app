@@ -1,8 +1,20 @@
 # Drowsie
 
-A cozy alarm app for people who want to wake up **consistently** without dreading mornings.
+A calm alarm experience for people who want to wake up **consistently** without dreading mornings.
 
-Traditional alarms optimize for “wake at any cost.” Drowsie optimizes for **emotional comfort**, **sustainable wake habits**, and a **calm, intentional** experience—more bedside companion than drill sergeant.
+The sleep–alarm category is dominated by “wake at any cost” apps (missions, loud persistence, cognitive tasks). Many users eventually hit tolerance, anxiety, or both. Drowsie sits in the **gentle wake-up and sleep hygiene** lane: circadian-friendly defaults, minimal stress, and a bedside companion tone—not a drill sergeant. Full market context, whitespace, and monetization pressures are in [`docs/direction.md`](docs/direction.md).
+
+---
+
+## Why this product (in brief)
+
+From that direction doc:
+
+- **Anti–mission-by-default** — reduce morning anxiety and muscle-memory “half-asleep” completions; favor gradual sound, ambient-first UX, and intentional simplicity for groggy users.
+- **AI and personalization (roadmap)** — conversational or dynamic wake experiences and morning-assistant patterns are where the category is moving; static missions alone age poorly.
+- **Retention and monetization** — subscription apps need instant proof of value and a clear model; direction.md summarizes strategic options (paywall discipline, hardware, B2B wellness) without committing the repo to one path.
+
+Product vision, audience, design language, feature map, and metrics live in [`docs/prodStrategy.md`](docs/prodStrategy.md). MVP scope and sequencing live in [`docs/productGuidelines.md`](docs/productGuidelines.md).
 
 ---
 
@@ -10,13 +22,11 @@ Traditional alarms optimize for “wake at any cost.” Drowsie optimizes for **
 
 > Help users wake up consistently **without hating mornings**.
 
-Full product framing, differentiators, design language, feature map, and success metrics live in [`docs/prodStrategy.md`](docs/prodStrategy.md).
-
 ---
 
-## What we’re building (MVP focus)
+## What we’re building first
 
-The long-term roadmap is rich; the near-term slice is narrow. Sequencing and scope discipline are spelled out in [`docs/productGuidelines.md`](docs/productGuidelines.md).
+Near-term delivery is deliberately narrow; see [`docs/productGuidelines.md`](docs/productGuidelines.md).
 
 **Must work first**
 
@@ -25,17 +35,15 @@ The long-term roadmap is rich; the near-term slice is narrow. Sequencing and sco
 
 **Must feel like Drowsie**
 
-- At least one calm default path: e.g. volume fade-in and an ambient-leaning wake experience, in the spirit of gradual wake even before “adaptive” intelligence ships.
+- At least one calm default path: e.g. volume fade-in and an ambient-leaning wake experience, in the spirit of gradual wake before richer “adaptive” or AI-driven flows ship.
 
 **Explicitly later (Phase 2+)**
 
-- Adaptive wake intelligence, widgets, bedtime mode, wake verification, and the rest of the feature list—until core alarm UX and sound prove the emotional promise.
+- Adaptive wake intelligence, widgets, bedtime mode, wake verification, AI-driven personalization, and social accountability ideas—after core alarm UX and sound prove the emotional promise.
 
 ---
 
 ## Principles (filters for every change)
-
-From the product docs:
 
 1. **Reduce stress** — every screen should answer: does this reduce anxiety or add it?
 2. **Intentional simplicity** — especially for half-awake users; shallow settings, one primary flow.
@@ -86,7 +94,7 @@ Other scripts:
 - **`app/`** — routes and screens (Expo Router).
 - **`src/`** — shared components, hooks, and app-specific modules.
 - **`assets/`** — images, fonts, and static assets.
-- **`docs/`** — product strategy and execution guidelines (source of truth for *what* and *why*).
+- **`docs/`** — market direction, product strategy, and execution guidelines (source of truth for *why* and *what*).
 
 ---
 
@@ -94,6 +102,7 @@ Other scripts:
 
 | Document | Purpose |
 | -------- | ------- |
+| [`docs/direction.md`](docs/direction.md) | Market whitespace beyond mission-based alarms; gentle wake, AI, social/gamification, monetization and retention context |
 | [`docs/prodStrategy.md`](docs/prodStrategy.md) | Vision, audience, positioning, design system, features, accessibility, monetization, notifications |
 | [`docs/productGuidelines.md`](docs/productGuidelines.md) | MVP slice, sequencing, platform risk, sound/haptics, verification vs later, metrics |
 

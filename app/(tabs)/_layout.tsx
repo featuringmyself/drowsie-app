@@ -14,8 +14,8 @@ export default function TabsLayout() {
         name="index"
         options={{
           title: "Alarm",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="alarm-outline" color={color} size={size} />
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={focused ? "alarm" : "alarm-outline"} color={color} size={size} />
           ),
         }}
       />
@@ -23,8 +23,8 @@ export default function TabsLayout() {
         name="alarm/create"
         options={{
           title: "Create",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="add" color={color} size={size} />
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={focused ? "add-circle" : "add-circle-outline"} color={color} size={size} />
           ),
         }}
       />
@@ -32,8 +32,8 @@ export default function TabsLayout() {
         name="settings"
         options={{
           title: "Settings",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="settings-outline" color={color} size={size} />
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={focused ? "settings" : "settings-outline"} color={color} size={size} />
           ),
         }}
       />

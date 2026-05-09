@@ -108,7 +108,7 @@ function AlarmCard({
         >
             <View className="min-w-0 flex-1">
                 <View className="flex-row items-center">
-                    <Text className="font-sans text-[2rem] font-bold leading-none text-star">{time}</Text>
+                    <Text className="font-sans text-[2rem] font-bold text-star">{time}</Text>
                     <Text className="font-sans ml-1 text-sm font-normal text-star">{period}</Text>
                 </View>
                 <Text

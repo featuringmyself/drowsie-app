@@ -25,39 +25,30 @@ module.exports = {
       addUtilities({
         ".font-thin": {
           fontFamily: "Poppins_100Thin",
-          fontWeight: "100",
         },
         ".font-extralight": {
           fontFamily: "Poppins_200ExtraLight",
-          fontWeight: "200",
         },
         ".font-light": {
           fontFamily: "Poppins_300Light",
-          fontWeight: "300",
         },
         ".font-normal": {
           fontFamily: "Poppins",
-          fontWeight: "400",
         },
         ".font-medium": {
           fontFamily: "Poppins_500Medium",
-          fontWeight: "500",
         },
         ".font-semibold": {
           fontFamily: "Poppins_600SemiBold",
-          fontWeight: "600",
         },
         ".font-bold": {
           fontFamily: "Poppins_700Bold",
-          fontWeight: "700",
         },
         ".font-extrabold": {
           fontFamily: "Poppins_800ExtraBold",
-          fontWeight: "800",
         },
         ".font-black": {
           fontFamily: "Poppins_900Black",
-          fontWeight: "900",
         },
       });
     }),

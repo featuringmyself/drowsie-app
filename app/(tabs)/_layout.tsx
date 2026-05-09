@@ -8,19 +8,14 @@ export default function TabsLayout() {
       tabBar={(props) => <CustomTabBar {...props} />}
       screenOptions={{
         headerShown: false,
-        tabBarShowLabel: false,
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
           title: "Alarm",
-          tabBarIcon: ({ color, size, focused }) => (
-            <Ionicons
-              name={focused ? "alarm" : "alarm-outline"}
-              color={color}
-              size={size}
-            />
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="alarm-outline" color={color} size={size} />
           ),
         }}
       />
@@ -28,7 +23,7 @@ export default function TabsLayout() {
         name="alarm/create"
         options={{
           title: "Create",
-          tabBarIcon: ({ color, size, focused }) => (
+          tabBarIcon: ({ color, size }) => (
             <Ionicons name="add" color={color} size={size} />
           ),
         }}
@@ -37,12 +32,8 @@ export default function TabsLayout() {
         name="settings"
         options={{
           title: "Settings",
-          tabBarIcon: ({ color, size, focused }) => (
-            <Ionicons
-              name={focused ? "settings" : "settings-outline"}
-              color={color}
-              size={size}
-            />
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings-outline" color={color} size={size} />
           ),
         }}
       />

@@ -1,6 +1,6 @@
+import AlarmList from "@/src/components/AlarmList"
 import SleepTime from "@/src/components/SleepTime"
 import { AlarmScreenStarrySky } from "@/src/components/StarrySky"
-import AlarmList from "@/src/components/AlarmList"
 import { useEffect, useState } from "react"
 import type { LayoutChangeEvent } from "react-native"
 import { ScrollView, Text, View, useWindowDimensions } from "react-native"
